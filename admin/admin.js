@@ -198,9 +198,11 @@
 
     function waypointCardHtml(wp) {
         var typesOptions = '';
+        var typeLabels = pimAdmin.waypointTypeLabels || {};
         for (var t = 0; t < pimAdmin.waypointTypes.length; t++) {
             var sel = wp.type === pimAdmin.waypointTypes[t] ? ' selected' : '';
-            typesOptions += '<option value="' + pimAdmin.waypointTypes[t] + '"' + sel + '>' + pimAdmin.waypointTypes[t] + '</option>';
+            var label = typeLabels[pimAdmin.waypointTypes[t]] || pimAdmin.waypointTypes[t];
+            typesOptions += '<option value="' + pimAdmin.waypointTypes[t] + '"' + sel + '>' + label + '</option>';
         }
 
         return '<div class="pim-waypoint-card" data-id="' + wp.id + '">' +

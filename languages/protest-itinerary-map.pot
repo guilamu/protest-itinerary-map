@@ -126,7 +126,7 @@ msgstr ""
 msgid "Global embedding is disabled. Enable it in %s first."
 msgstr ""
 
-#: includes/class-meta-box.php
+#: includes/class-meta-box.php includes/class-settings.php
 msgid "Settings"
 msgstr ""
 
@@ -246,10 +246,6 @@ msgstr ""
 
 #: includes/class-settings.php
 msgid "Protest Map Settings"
-msgstr ""
-
-#: includes/class-settings.php
-msgid "Settings"
 msgstr ""
 
 #: includes/class-settings.php

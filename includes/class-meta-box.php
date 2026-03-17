@@ -124,6 +124,13 @@ class PIM_Meta_Box {
             'waypoints'      => $waypoints ? json_decode( $waypoints, true ) : array(),
             'routeGeoJSON'   => $route_geojson ? json_decode( $route_geojson, true ) : null,
             'waypointTypes'  => PIM_Post_Type::WAYPOINT_TYPES,
+            'waypointTypeLabels' => array(
+                'start'         => __( 'Start', 'protest-itinerary-map' ),
+                'end'           => __( 'End', 'protest-itinerary-map' ),
+                'checkpoint'    => __( 'Checkpoint', 'protest-itinerary-map' ),
+                'meeting-point' => __( 'Meeting Point', 'protest-itinerary-map' ),
+                'rest-stop'     => __( 'Rest Stop', 'protest-itinerary-map' ),
+            ),
             'iconsUrl'       => PIM_PLUGIN_URL . 'assets/icons/',
             'i18n'           => array(
                 'confirmRemove'    => __( 'Remove this waypoint?', 'protest-itinerary-map' ),
