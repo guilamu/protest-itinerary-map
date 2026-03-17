@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Protest Itinerary Map 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-01T00:00:00+00:00\n"
-"PO-Revision-Date: 2026-03-16 15:38+0100\n"
+"PO-Revision-Date: 2026-03-17 11:53+0100\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
@@ -130,7 +130,7 @@ msgstr "Activer l'intégration iframe pour cet itinéraire"
 msgid "Global embedding is disabled. Enable it in %s first."
 msgstr "L'intégration globale est désactivée. Activez-la d'abord dans %s."
 
-#: includes/class-meta-box.php
+#: includes/class-meta-box.php includes/class-settings.php
 msgid "Settings"
 msgstr "Réglages"
 
@@ -161,7 +161,6 @@ msgstr "Nom du syndicat :"
 #: includes/class-meta-box.php includes/class-settings.php
 msgid "e.g. CGT, SNUDI FO 93"
 msgstr "ex. CGT, SNUDI FO 93"
-
 
 #. translators: %d: number of subscribers
 #: includes/class-meta-box.php
@@ -250,10 +249,6 @@ msgstr "à pied"
 #: includes/class-settings.php
 msgid "Protest Map Settings"
 msgstr "Réglages Carte de manifestation"
-
-#: includes/class-settings.php
-msgid "Settings"
-msgstr "Réglages"
 
 #: includes/class-settings.php
 msgid "API Settings"
