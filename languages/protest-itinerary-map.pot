@@ -1,0 +1,598 @@
+# Copyright (C) 2024 Protest Itinerary Map
+# This file is distributed under the same license as the Protest Itinerary Map plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Protest Itinerary Map 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-01T00:00:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: protest-itinerary-map.php
+msgid "Protest Itinerary Map"
+msgstr ""
+
+#: includes/class-post-type.php
+msgid "Itineraries"
+msgstr ""
+
+#: includes/class-post-type.php
+msgid "Itinerary"
+msgstr ""
+
+#: includes/class-post-type.php
+msgid "Add New"
+msgstr ""
+
+#: includes/class-post-type.php
+msgid "Add New Itinerary"
+msgstr ""
+
+#: includes/class-post-type.php
+msgid "Edit Itinerary"
+msgstr ""
+
+#: includes/class-post-type.php
+msgid "New Itinerary"
+msgstr ""
+
+#: includes/class-post-type.php
+msgid "View Itinerary"
+msgstr ""
+
+#: includes/class-post-type.php
+msgid "Search Itineraries"
+msgstr ""
+
+#: includes/class-post-type.php
+msgid "No itineraries found."
+msgstr ""
+
+#: includes/class-post-type.php
+msgid "No itineraries found in Trash."
+msgstr ""
+
+#: includes/class-post-type.php
+msgid "All Itineraries"
+msgstr ""
+
+#: includes/class-post-type.php
+msgid "Protest Maps"
+msgstr ""
+
+#: includes/class-post-type.php
+msgid "Shortcode"
+msgstr ""
+
+#: includes/class-post-type.php
+msgid "Event Date"
+msgstr ""
+
+#: includes/class-post-type.php
+msgid "Attendance"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Itinerary Info"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Map Builder"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Embed Options"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Attendance & Notifications"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Search address…"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Click the map to add a waypoint, or use the search bar above."
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Waypoints"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Total distance:"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Total duration:"
+msgstr ""
+
+#. translators: %s: date/time string
+#: includes/class-meta-box.php
+msgid "Route cached at: %s"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Enable iframe embed for this itinerary"
+msgstr ""
+
+#. translators: %s: settings page URL
+#: includes/class-meta-box.php
+msgid "Global embedding is disabled. Enable it in %s first."
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Settings"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Embed code:"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Shortcode:"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Enable \"I'll be there\" counter"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Current count:"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Reset"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Union name:"
+msgstr ""
+
+#: includes/class-meta-box.php includes/class-settings.php
+msgid "e.g. CGT, SNUDI FO 93"
+msgstr ""
+
+
+#. translators: %d: number of subscribers
+#: includes/class-meta-box.php
+msgid "%d confirmed subscriber"
+msgid_plural "%d confirmed subscribers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-meta-box.php
+msgid "Reset the attendance count to 0?"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Will reset on save"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Too many waypoints (max 50). Route was not calculated."
+msgstr ""
+
+#. NOTE: Old settings strings (Default Latitude, Default Longitude, etc.) removed — replaced by address autocomplete
+
+#: includes/class-notification.php
+msgid "Protest itinerary updated"
+msgstr ""
+
+#: includes/class-notification.php
+msgid "Unsubscribe"
+msgstr ""
+
+#: includes/class-subscriber.php
+msgid "Invalid email address."
+msgstr ""
+
+#: includes/class-shortcode.php includes/class-iframe-endpoint.php
+msgid "person plans to attend"
+msgstr ""
+
+#: includes/class-shortcode.php includes/class-iframe-endpoint.php
+msgid "people plan to attend"
+msgstr ""
+
+#: includes/class-shortcode.php includes/class-iframe-endpoint.php
+msgid "You're coming!"
+msgstr ""
+
+#: includes/class-shortcode.php includes/class-iframe-endpoint.php
+msgid "I'll be there!"
+msgstr ""
+
+#: includes/class-shortcode.php includes/class-iframe-endpoint.php
+msgid "Want to stay informed?"
+msgstr ""
+
+#: includes/class-shortcode.php includes/class-iframe-endpoint.php
+msgid "Notify me of updates about this protest"
+msgstr ""
+
+#: includes/class-shortcode.php includes/class-iframe-endpoint.php
+msgid "No thanks"
+msgstr ""
+
+#: includes/class-shortcode.php includes/class-iframe-endpoint.php
+msgid "Confirm"
+msgstr ""
+
+#: includes/class-shortcode.php includes/class-iframe-endpoint.php
+msgid "You will be notified of any updates."
+msgstr ""
+
+#: includes/class-shortcode.php includes/class-iframe-endpoint.php
+msgid "Also subscribe to %s's newsletter."
+msgstr ""
+
+#: includes/class-shortcode.php includes/class-iframe-endpoint.php
+msgid "Yes, sign me up"
+msgstr ""
+
+#: includes/class-shortcode.php includes/class-iframe-endpoint.php
+msgid "Your email will be deleted the day after the protest date."
+msgstr ""
+
+#: includes/class-shortcode.php includes/class-iframe-endpoint.php
+msgid "walk"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Protest Map Settings"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Settings"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "API Settings"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Configure the OpenRouteService API key used for route calculations."
+msgstr ""
+
+#: includes/class-settings.php
+msgid "ORS API Key"
+msgstr ""
+
+#. translators: %s: URL
+#: includes/class-settings.php
+msgid "Get a free API key at %s"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Enter an API key first."
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Testing…"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Request failed."
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Map Defaults"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Default center for the admin map builder when no waypoints exist. Type an address below."
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Default Location"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "e.g. Place de la République, Paris"
+msgstr ""
+
+#. translators: %1$s: latitude, %2$s: longitude
+#: includes/class-settings.php
+msgid "Current: %1$s, %2$s"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Default: Paris (48.8566, 2.3522)"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Embed Settings"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Global toggle for iframe embedding. Individual itineraries can also be toggled independently."
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Enable Iframe Embedding"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Allow itineraries to be embedded via iframe"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Union"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Default union name used when creating new itineraries. Can be overridden per itinerary."
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Union Name"
+msgstr ""
+
+#: public/public-map.php iframe/iframe-map.php includes/class-shortcode.php includes/class-iframe-endpoint.php
+msgid "Start"
+msgstr ""
+
+#: public/public-map.php iframe/iframe-map.php includes/class-shortcode.php includes/class-iframe-endpoint.php
+msgid "End"
+msgstr ""
+
+#: public/public-map.php iframe/iframe-map.php includes/class-shortcode.php includes/class-iframe-endpoint.php
+msgid "Checkpoint"
+msgstr ""
+
+#: public/public-map.php iframe/iframe-map.php includes/class-shortcode.php includes/class-iframe-endpoint.php
+msgid "Meeting Point"
+msgstr ""
+
+#: public/public-map.php iframe/iframe-map.php includes/class-shortcode.php includes/class-iframe-endpoint.php
+msgid "Rest Stop"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Remove this waypoint?"
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Route preview failed. The route will be retried on save."
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "No results found."
+msgstr ""
+
+#: includes/class-meta-box.php
+msgid "Maximum 50 waypoints allowed (ORS limit)."
+msgstr ""
+
+#: admin/admin-meta-box.php
+msgid "Event Name"
+msgstr ""
+
+#: admin/admin-meta-box.php
+msgid "Event Date"
+msgstr ""
+
+#: admin/admin-meta-box.php
+msgid "Description"
+msgstr ""
+
+#: admin/admin-meta-box.php
+msgid "Organizer Contact"
+msgstr ""
+
+#: iframe/iframe-map.php
+msgid "Protest Itinerary Map"
+msgstr ""
+
+#. Subscribers admin page
+#: admin/admin-subscribers.php
+msgid "Subscribers"
+msgstr ""
+
+#: admin/admin-subscribers.php
+msgid "All subscribers have been removed."
+msgstr ""
+
+#: admin/admin-subscribers.php
+msgid "Notification sent to %d subscriber."
+msgid_plural "Notification sent to %d subscribers."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/admin-subscribers.php
+msgid "No subscribers with protest notifications enabled."
+msgstr ""
+
+#: admin/admin-subscribers.php
+msgid "Email sending failed. Please check your server mail configuration."
+msgstr ""
+
+#: admin/admin-subscribers.php
+msgid "Select itinerary:"
+msgstr ""
+
+#: admin/admin-subscribers.php
+msgid "— Choose —"
+msgstr ""
+
+#: admin/admin-subscribers.php
+msgid "View"
+msgstr ""
+
+#: admin/admin-subscribers.php
+msgid "%d subscriber"
+msgid_plural "%d subscribers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/admin-subscribers.php
+msgid "Email"
+msgstr ""
+
+#: admin/admin-subscribers.php
+msgid "Protest"
+msgstr ""
+
+#: admin/admin-subscribers.php
+msgid "Confirmed"
+msgstr ""
+
+#: admin/admin-subscribers.php
+msgid "Date"
+msgstr ""
+
+#: admin/admin-subscribers.php
+msgid "Export CSV"
+msgstr ""
+
+#: admin/admin-subscribers.php
+msgid "Delete ALL subscribers for this itinerary?"
+msgstr ""
+
+#: admin/admin-subscribers.php
+msgid "Purge All Subscribers"
+msgstr ""
+
+#: admin/admin-subscribers.php
+msgid "Send Notification"
+msgstr ""
+
+#: admin/admin-subscribers.php
+msgid "Write your update message here…"
+msgstr ""
+
+#: admin/admin-subscribers.php
+msgid "Will be sent to %d confirmed protest subscriber."
+msgid_plural "Will be sent to %d confirmed protest subscribers."
+msgstr[0] ""
+msgstr[1] ""
+
+#. API & Validation
+#: protest-itinerary-map.php
+msgid "Unauthorized."
+msgstr ""
+
+#: protest-itinerary-map.php
+msgid "At least 2 coordinates are required."
+msgstr ""
+
+#: protest-itinerary-map.php
+msgid "Invalid coordinate format."
+msgstr ""
+
+#: protest-itinerary-map.php
+msgid "Empty search query."
+msgstr ""
+
+#: protest-itinerary-map.php
+msgid "Invalid coordinates."
+msgstr ""
+
+#: protest-itinerary-map.php
+msgid "No API key provided."
+msgstr ""
+
+#: protest-itinerary-map.php
+msgid "API key is valid."
+msgstr ""
+
+#. translators: %s: error message
+#: protest-itinerary-map.php
+msgid "ORS API error: %s"
+msgstr ""
+
+#: protest-itinerary-map.php
+msgid "ORS API key is not configured."
+msgstr ""
+
+#: protest-itinerary-map.php
+msgid "Protest Itinerary Map: No OpenRouteService API key configured. Routing will not work."
+msgstr ""
+
+#: protest-itinerary-map.php
+msgid "Configure now →"
+msgstr ""
+
+#: includes/class-settings.php
+msgid "Test API Key"
+msgstr ""
+
+#. Email Notifications & Unsubscribe
+#: protest-itinerary-map.php
+msgid "Unsubscribed"
+msgstr ""
+
+#: protest-itinerary-map.php
+msgid "You have been unsubscribed. You will no longer receive emails about this protest."
+msgstr ""
+
+#: includes/class-notification.php
+msgid "Protest update"
+msgstr ""
+
+#. translators: %s: event name
+#: includes/class-notification.php
+msgid "Update: %s"
+msgstr ""
+
+#. translators: %s: unsubscribe URL
+#: includes/class-notification.php
+msgid "To unsubscribe: %s"
+msgstr ""
+
+#. translators: %s: event name
+#: includes/class-notification.php
+msgid "The itinerary \"%s\" has been updated. Please check the latest details on the website."
+msgstr ""
+
+#: includes/class-notification.php
+msgid "Protest itinerary"
+msgstr ""
+
+#: includes/class-subscriber.php
+msgid "Could not save subscription."
+msgstr ""
+
+#. iframe endpoint errors
+#: includes/class-iframe-endpoint.php
+msgid "Embedding is disabled."
+msgstr ""
+
+#: includes/class-iframe-endpoint.php
+msgid "Forbidden"
+msgstr ""
+
+#: includes/class-iframe-endpoint.php
+msgid "Itinerary not found."
+msgstr ""
+
+#: includes/class-iframe-endpoint.php
+msgid "Not Found"
+msgstr ""
+
+#: includes/class-iframe-endpoint.php
+msgid "Embedding is not enabled for this itinerary."
+msgstr ""
+
+#: includes/class-iframe-endpoint.php
+msgid "No waypoints found for this itinerary."
+msgstr ""
+
+#. GitHub Updater
+#: includes/class-github-updater.php
+msgid "Unable to rename the update folder. Please retry or update manually."
+msgstr ""
+
+#: includes/class-shortcode.php public/public-map.php
+msgid "Show metro lines"
+msgstr ""
+
+#: includes/class-shortcode.php
+msgid "Hide metro lines"
+msgstr ""

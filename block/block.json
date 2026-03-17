@@ -1,0 +1,32 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "protest-itinerary-map/protest-map",
+    "version": "1.0.0",
+    "title": "Protest Itinerary Map",
+    "category": "widgets",
+    "icon": "location-alt",
+    "description": "Display a protest itinerary map with route and waypoints.",
+    "keywords": [ "map", "protest", "itinerary", "march" ],
+    "supports": {
+        "html": false,
+        "align": [ "wide", "full" ]
+    },
+    "attributes": {
+        "id": {
+            "type": "number",
+            "default": 0
+        },
+        "sidebar": {
+            "type": "boolean",
+            "default": true
+        },
+        "height": {
+            "type": "string",
+            "default": "500px"
+        }
+    },
+    "textdomain": "protest-itinerary-map",
+    "editorScript": "file:./editor.js",
+    "render": "file:./render.php"
+}

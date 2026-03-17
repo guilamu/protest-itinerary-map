@@ -1,0 +1,330 @@
+/* ==========================================================================
+   Protest Itinerary Map — Frontend Styles
+   ========================================================================== */
+
+:root {
+    --pim-primary: #d63384;
+    --pim-text: #1d2327;
+    --pim-text-light: #666;
+    --pim-border: #dcdcde;
+    --pim-bg: #fff;
+    --pim-bg-hover: #f8f9fa;
+    --pim-route-color: #d63384;
+}
+
+/* Container */
+.pim-container {
+    margin: 1.5em 0;
+    font-family: inherit;
+    color: var(--pim-text);
+}
+
+.pim-event-title {
+    margin: 0 0 0.75em;
+    font-size: 1.3em;
+}
+
+/* Layout */
+.pim-layout {
+    display: block;
+}
+
+.pim-layout.pim-has-sidebar {
+    display: flex;
+    gap: 16px;
+}
+
+.pim-layout.pim-has-sidebar .pim-map-col {
+    flex: 1 1 65%;
+    min-width: 0;
+}
+
+.pim-layout.pim-has-sidebar .pim-sidebar {
+    flex: 0 0 35%;
+    max-height: 500px;
+    overflow-y: auto;
+    border: 1px solid var(--pim-border);
+    border-radius: 4px;
+    background: var(--pim-bg);
+}
+
+/* Map */
+.pim-map {
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid var(--pim-border);
+    z-index: 1;
+}
+
+/* Sidebar */
+.pim-stop-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pim-stop-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--pim-border);
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.pim-stop-item:last-child {
+    border-bottom: 0;
+}
+
+.pim-stop-item:hover {
+    background: var(--pim-bg-hover);
+}
+
+.pim-stop-item.pim-active {
+    background: #f0f6fc;
+    border-left: 3px solid var(--pim-primary);
+}
+
+.pim-stop-icon {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.pim-stop-content {
+    min-width: 0;
+}
+
+.pim-stop-type {
+    display: block;
+    font-weight: 600;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    color: var(--pim-primary);
+    letter-spacing: 0.03em;
+}
+
+.pim-stop-label {
+    display: block;
+    font-size: 0.95em;
+    word-break: break-word;
+}
+
+.pim-stop-info {
+    margin-top: 4px;
+    font-size: 0.85em;
+    color: var(--pim-text-light);
+    line-height: 1.4;
+}
+
+.pim-stop-info a {
+    color: var(--pim-primary);
+}
+
+/* Popup */
+.pim-popup {
+    font-size: 13px;
+    line-height: 1.5;
+    max-width: 280px;
+}
+
+.pim-popup-info {
+    margin-top: 6px;
+    color: var(--pim-text-light);
+    font-size: 12px;
+}
+
+.pim-popup-leg {
+    margin-top: 6px;
+    font-size: 11px;
+    color: var(--pim-text-light);
+}
+
+.pim-popup-summary {
+    margin-top: 6px;
+    font-size: 12px;
+    padding-top: 6px;
+    border-top: 1px solid var(--pim-border);
+}
+
+/* Responsive: stack on narrow viewports */
+@media (max-width: 768px) {
+    .pim-layout.pim-has-sidebar {
+        flex-direction: column;
+    }
+
+    .pim-layout.pim-has-sidebar .pim-sidebar {
+        max-height: 250px;
+    }
+}
+
+/* ==========================================================================
+   Attendance / Vote UI
+   ========================================================================== */
+
+.pim-attendance {
+    margin-top: 8px;
+}
+
+.pim-attendance-divider {
+    border-top: 1px solid var(--pim-border);
+    margin: 8px 0;
+}
+
+.pim-attendance-count {
+    font-size: 12px;
+    color: var(--pim-text);
+    margin-bottom: 6px;
+}
+
+.pim-count-number {
+    font-weight: 700;
+}
+
+.pim-vote-btn {
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--pim-primary);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.pim-vote-btn:hover {
+    background: #b52a6e;
+}
+
+.pim-vote-btn:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.pim-vote-status.pim-voted {
+    font-size: 13px;
+    font-weight: 600;
+    color: #198754;
+}
+
+/* Email form inside popup */
+.pim-email-form {
+    font-size: 12px;
+}
+
+.pim-email-prompt {
+    margin: 4px 0 6px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.pim-email-checkboxes label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.pim-email-checkboxes input[type="checkbox"] {
+    margin-right: 4px;
+}
+
+.pim-email-input-row {
+    margin-top: 6px;
+}
+
+.pim-email-input {
+    width: 100%;
+    padding: 5px 8px;
+    font-size: 12px;
+    border: 1px solid var(--pim-border);
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.pim-email-actions {
+    margin-top: 6px;
+    display: flex;
+    gap: 6px;
+}
+
+.pim-email-submit-btn {
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--pim-primary);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.pim-email-submit-btn:hover {
+    background: #b52a6e;
+}
+
+.pim-email-submit-btn:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.pim-email-dismiss-btn {
+    padding: 4px 12px;
+    font-size: 12px;
+    color: var(--pim-text-light);
+    background: none;
+    border: 1px solid var(--pim-border);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.pim-email-dismiss-btn:hover {
+    background: var(--pim-bg-hover);
+}
+
+.pim-email-confirmed {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #198754;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   Metro Overlay Toggle
+   ========================================================================== */
+
+.pim-btn-metro {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    background: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 5px 7px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.pim-btn-metro:hover {
+    background: #e9ecef;
+}
+
+.pim-btn-metro.pim-btn-active {
+    background: #d4edda;
+    border-color: #28a745;
+}
+
+.pim-metro-tooltip {
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+}

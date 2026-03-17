@@ -1,0 +1,50 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+      - '[0-9]+.[0-9]+.[0-9]+'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Get version from tag
+        id: get_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
+      - name: Create plugin zip
+        run: |
+          mkdir -p build/protest-itinerary-map
+
+          rsync -av --exclude='.git' \
+                    --exclude='.github' \
+                    --exclude='build' \
+                    --exclude='.gitignore' \
+                    --exclude='composer.*' \
+                    --exclude='package*.json' \
+                    --exclude='node_modules' \
+                    --exclude='.DS_Store' \
+                    --exclude='screenshot*.*' \
+                    ./ build/protest-itinerary-map/
+
+          cp README.md build/protest-itinerary-map/ 2>/dev/null || true
+
+          cd build
+          zip -r ../protest-itinerary-map.zip protest-itinerary-map
+          cd ..
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: protest-itinerary-map.zip
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
