@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Protest Itinerary Map plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Protest Itinerary Map 1.0.0\n"
+"Project-Id-Version: Protest Itinerary Map 1.0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-01T00:00:00+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -449,6 +449,14 @@ msgstr ""
 
 #: admin/admin-subscribers.php
 msgid "Delete ALL subscribers for this itinerary?"
+msgstr ""
+
+#: protest-itinerary-map.php
+msgid "More information about Protest Itinerary Map"
+msgstr ""
+
+#: protest-itinerary-map.php
+msgid "View details"
 msgstr ""
 
 #: admin/admin-subscribers.php

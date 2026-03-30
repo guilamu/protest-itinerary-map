@@ -3,7 +3,7 @@
  * Plugin Name: Protest Itinerary Map
  * Plugin URI: https://github.com/guilamu/protest-itinerary-map
  * Description: Create and display protest itineraries on interactive OpenStreetMap-based maps with OpenRouteService routing.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Guilamu
  * Author URI: https://github.com/guilamu
  * Text Domain: protest-itinerary-map
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'PIM_VERSION', '1.0.0' );
+define( 'PIM_VERSION', '1.0.1' );
 define( 'PIM_PLUGIN_FILE', __FILE__ );
 define( 'PIM_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'PIM_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
@@ -430,6 +430,18 @@ function pim_plugin_row_meta( $links, $file ) {
     if ( PIM_PLUGIN_BASENAME !== $file ) {
         return $links;
     }
+
+    // "View details" thickbox link — same pattern as WordPress.org-hosted plugins.
+    $links[] = sprintf(
+        '<a href="%s" class="thickbox open-plugin-details-modal" aria-label="%s" data-title="%s">%s</a>',
+        esc_url( self_admin_url(
+            'plugin-install.php?tab=plugin-information&plugin=protest-itinerary-map'
+            . '&TB_iframe=true&width=772&height=926'
+        ) ),
+        esc_attr__( 'More information about Protest Itinerary Map', 'protest-itinerary-map' ),
+        esc_attr__( 'Protest Itinerary Map', 'protest-itinerary-map' ),
+        esc_html__( 'View details', 'protest-itinerary-map' )
+    );
 
     if ( class_exists( 'Guilamu_Bug_Reporter' ) ) {
         $links[] = sprintf(

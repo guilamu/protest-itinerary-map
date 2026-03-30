@@ -118,6 +118,11 @@ Set default map center coordinates and zoom level in **Protest Itineraries → S
 
 ## Changelog
 
+### 1.0.1
+- Added "View details" thickbox link to plugin row meta
+- Rewritten GitHub updater: README.md parsing with Parsedown, plugin info popup with description/installation/FAQ/changelog tabs, CSS injection, table-to-div conversion
+- Added Parsedown.php dependency for Markdown rendering
+
 ### 1.0.0
 - Initial release
 - Interactive map builder with drag-and-drop waypoints
