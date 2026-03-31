@@ -3,7 +3,7 @@
  * Plugin Name: Protest Itinerary Map
  * Plugin URI: https://github.com/guilamu/protest-itinerary-map
  * Description: Create and display protest itineraries on interactive OpenStreetMap-based maps with OpenRouteService routing.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Guilamu
  * Author URI: https://github.com/guilamu
  * Text Domain: protest-itinerary-map
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'PIM_VERSION', '1.0.1' );
+define( 'PIM_VERSION', '1.0.2' );
 define( 'PIM_PLUGIN_FILE', __FILE__ );
 define( 'PIM_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'PIM_PLUGIN_URL', plugin_dir_url( __FILE__ ) );

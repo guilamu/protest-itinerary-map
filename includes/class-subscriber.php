@@ -31,7 +31,7 @@ class PIM_Subscriber {
         $charset = $wpdb->get_charset_collate();
 
         $sql = "CREATE TABLE {$table} (
-            id               BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            id               BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
             post_id          BIGINT UNSIGNED NOT NULL,
             email            VARCHAR(255) NOT NULL,
             notify_protest   TINYINT(1) DEFAULT 0,
@@ -39,7 +39,8 @@ class PIM_Subscriber {
             confirmed        TINYINT(1) DEFAULT 0,
             token            VARCHAR(64) NOT NULL,
             created_at       DATETIME NOT NULL,
-            INDEX (post_id),
+            PRIMARY KEY  (id),
+            KEY post_id (post_id),
             UNIQUE KEY unique_sub (post_id, email)
         ) {$charset};";
 

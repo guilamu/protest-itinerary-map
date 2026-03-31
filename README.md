@@ -118,6 +118,9 @@ Set default map center coordinates and zoom level in **Protest Itineraries → S
 
 ## Changelog
 
+### 1.0.2
+- Fix `dbDelta` SQL schema: renamed inline `AUTO_INCREMENT PRIMARY KEY` to separate `PRIMARY KEY (id)`, replaced anonymous `INDEX` with named `KEY post_id (post_id)` to resolve "Multiple primary key defined" and "Incorrect index name" database errors
+
 ### 1.0.1
 - Added "View details" thickbox link to plugin row meta
 - Rewritten GitHub updater: README.md parsing with Parsedown, plugin info popup with description/installation/FAQ/changelog tabs, CSS injection, table-to-div conversion
